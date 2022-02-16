@@ -282,6 +282,7 @@ export class Method extends Resource {
       type: bindResult.type,
       uri: bindResult.uri,
       cacheKeyParameters: options.cacheKeyParameters,
+      cacheKeyInvalidation: options.cacheKeyInvalidation,
       cacheNamespace: options.cacheNamespace,
       contentHandling: options.contentHandling,
       integrationHttpMethod: bindResult.integrationHttpMethod,

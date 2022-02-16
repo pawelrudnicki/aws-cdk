@@ -11,6 +11,16 @@ export interface IntegrationOptions {
   readonly cacheKeyParameters?: string[];
 
   /**
+   * A object of per-key cache invalidation that allows to enable or no require call authorization
+   * and how to handle with that call.
+   * {
+   *    requireAuthorization: true
+   *    handleUnauthorizedRequests: "Ignore", "IgnoreWithWarning", "Fail"
+   * }
+   */
+  readonly cacheKeyInvalidation?: object;
+
+  /**
    * An API-specific tag group of related cached parameters.
    */
   readonly cacheNamespace?: string;
